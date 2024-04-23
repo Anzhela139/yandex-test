@@ -53,3 +53,40 @@
     font-style: italic;
     src: url(../fonts/Merriweather/Merriweather-BlackItalic.ttf);
 }
+
+
+
+@font-face {
+    font-family: 'Golos';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Golos_UI/Golos-UI_Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Golos';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/Golos_UI/Golos-UI_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Golos';
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/Golos/golostext_demibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Golos';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Golos_UI/Golos-UI_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Golos';
+    font-weight: 900;
+    font-style: normal;
+    src: url('../fonts/Golos/golostext_black.ttf') format('truetype');
+}
