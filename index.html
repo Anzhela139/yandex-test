@@ -12,11 +12,11 @@
 <body>
   <section class="greeting">
     <div class="greeting__bg">
-      <img src="./assets/images/greeting.svg" alt="">
+      <img src="./assets/images/greeting.png" alt="" >
     </div>
     <div class="logo_wrapper">
       <svg class="logo__icon" width="246" height="36">
-        <use href="./assets/images/logo.svg#logo"></use>
+        <use href="./assets/images/sprite.svg#logo"></use>
       </svg>
     </div>
     <div class="greeting__content">
@@ -148,77 +148,92 @@
   </section>
   <section class="members">
     <h2 class="h2">Участники турнира</h2>
-    <div class="members__carousel">
-      <div class="members__card">
-        <div class="img-wrapper">
-          <img src="./assets/images/avatar.png" alt="">
-        </div>
-        <div class="text-wrapper">
-          <div class="members__title">Хозе-Рауль Капабланка</div>
-          <div class="members__subtitle">Чемпион мира по шахматам</div>
-        </div>
-        <div class="btn-wrapper">
-          <button class="btn">Подробнее</button>
-        </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-controls">
+        <button class="control__left btn" type="button" data-direction="left">
+          <svg class="" width="12" height="20" >
+            <use href="./assets/images/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <div class="carousel-controls__text">1 / 3</div>
+        <button class="control__right btn" type="button" data-direction="right">
+          <svg class="" width="12" height="20">
+            <use href="./assets/images/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
       </div>
-      <div class="members__card">
-        <div class="img-wrapper">
-          <img src="./assets/images/avatar.png" alt="">
+      <div class="members__carousel">
+        <div class="members__card">
+          <div class="img-wrapper">
+            <img src="./assets/images/avatar.png" alt="">
+          </div>
+          <div class="text-wrapper">
+            <div class="members__title">Хозе-Рауль Капабланка</div>
+            <div class="members__subtitle">Чемпион мира по шахматам</div>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn btn-link">Подробнее</button>
+          </div>
         </div>
-        <div class="text-wrapper">
-          <div class="members__title">Эммануил Ласкер</div>
-          <div class="members__subtitle">Чемпион мира по шахматам</div>
+        <div class="members__card">
+          <div class="img-wrapper">
+            <img src="./assets/images/avatar.png" alt="">
+          </div>
+          <div class="text-wrapper">
+            <div class="members__title">Эммануил Ласкер</div>
+            <div class="members__subtitle">Чемпион мира по шахматам</div>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn btn-link">Подробнее</button>
+          </div>
         </div>
-        <div class="btn-wrapper">
-          <button class="btn">Подробнее</button>
+        <div class="members__card">
+          <div class="img-wrapper">
+            <img src="./assets/images/avatar.png" alt="">
+          </div>
+          <div class="text-wrapper">
+            <div class="members__title">Александр Алехин</div>
+            <div class="members__subtitle">Чемпион мира по шахматам</div>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn btn-link">Подробнее</button>
+          </div>
         </div>
-      </div>
-      <div class="members__card">
-        <div class="img-wrapper">
-          <img src="./assets/images/avatar.png" alt="">
+        <div class="members__card">
+          <div class="img-wrapper">
+            <img src="./assets/images/avatar.png" alt="">
+          </div>
+          <div class="text-wrapper">
+            <div class="members__title">Арон Нимцович</div>
+            <div class="members__subtitle">Чемпион мира по шахматам</div>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn btn-link">Подробнее</button>
+          </div>
         </div>
-        <div class="text-wrapper">
-          <div class="members__title">Александр Алехин</div>
-          <div class="members__subtitle">Чемпион мира по шахматам</div>
+        <div class="members__card">
+          <div class="img-wrapper">
+            <img src="./assets/images/avatar.png" alt="">
+          </div>
+          <div class="text-wrapper">
+            <div class="members__title">Рихард Рети</div>
+            <div class="members__subtitle">Чемпион мира по шахматам</div>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn btn-link">Подробнее</button>
+          </div>
         </div>
-        <div class="btn-wrapper">
-          <button class="btn">Подробнее</button>
-        </div>
-      </div>
-      <div class="members__card">
-        <div class="img-wrapper">
-          <img src="./assets/images/avatar.png" alt="">
-        </div>
-        <div class="text-wrapper">
-          <div class="members__title">Арон Нимцович</div>
-          <div class="members__subtitle">Чемпион мира по шахматам</div>
-        </div>
-        <div class="btn-wrapper">
-          <button class="btn">Подробнее</button>
-        </div>
-      </div>
-      <div class="members__card">
-        <div class="img-wrapper">
-          <img src="./assets/images/avatar.png" alt="">
-        </div>
-        <div class="text-wrapper">
-          <div class="members__title">Рихард Рети</div>
-          <div class="members__subtitle">Чемпион мира по шахматам</div>
-        </div>
-        <div class="btn-wrapper">
-          <button class="btn">Подробнее</button>
-        </div>
-      </div>
-      <div class="members__card">
-        <div class="img-wrapper">
-          <img src="./assets/images/avatar.png" alt="">
-        </div>
-        <div class="text-wrapper">
-          <div class="members__title">Остап Бендер</div>
-          <div class="members__subtitle">Гроссмейстер</div>
-        </div>
-        <div class="btn-wrapper">
-          <button class="btn">Подробнее</button>
+        <div class="members__card">
+          <div class="img-wrapper">
+            <img src="./assets/images/avatar.png" alt="">
+          </div>
+          <div class="text-wrapper">
+            <div class="members__title">Остап Бендер</div>
+            <div class="members__subtitle">Гроссмейстер</div>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn btn-link">Подробнее</button>
+          </div>
         </div>
       </div>
     </div>
