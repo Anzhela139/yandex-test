@@ -10,6 +10,16 @@ class Main {
         this.setScrollbarWidth();
         window.addEventListener('resize', this.handleResize.bind(this));
         document.addEventListener('DOMContentLoaded', this.initCarousel.bind(this));
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     }
 
     handleResize() {
@@ -19,11 +29,11 @@ class Main {
 
     initCarousel() {
         if (!this.membersCarousel) {
-            
+
             this.membersCarousel = new Carousel(
-                document.querySelector('.stages .carousel-wrapper'), 
-                document.querySelector('.stages .stages__grid'), 
-                document.querySelector('.stages .carousel-controls'), 
+                document.querySelector('.stages .carousel-wrapper'),
+                document.querySelector('.stages .stages__grid'),
+                document.querySelector('.stages .carousel-controls'),
                 document.querySelector('.stages .carousel-controls__text'),
                 '--carousel-stages-transition',
                 0,
@@ -36,9 +46,9 @@ class Main {
 
         if (!this.stagesCarousel) {
             this.stagesCarousel = new Carousel(
-                document.querySelector('.members .carousel-wrapper'), 
-                document.querySelector('.members .members__carousel'), 
-                document.querySelector('.members .carousel-controls'), 
+                document.querySelector('.members .carousel-wrapper'),
+                document.querySelector('.members .members__carousel'),
+                document.querySelector('.members .carousel-controls'),
                 document.querySelector('.members .carousel-controls__text'),
                 '--carousel-members-transition',
                 20,
@@ -51,7 +61,7 @@ class Main {
     setScrollbarWidth() {
         this.scrollbarWidth = window.innerWidth - (window.innerWidth - document.documentElement.clientWidth);
         window.scrollbarWidth = this.scrollbarWidth;
-        document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - (window.innerWidth - document.documentElement.clientWidth)) + "px");
+        document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - (window.innerWidth - document.documentElement.clientWidth)) + 'px');
     }
 }
 

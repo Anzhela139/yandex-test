@@ -48,6 +48,7 @@ h3 {
     border: transparent;
     cursor: pointer;
     font-family: "Golos";
+    text-decoration: none;
 }
 
 .btn-primary {
